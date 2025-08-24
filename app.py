@@ -45,7 +45,7 @@ purpose_map = {
 
 # --- Input Widget di Sidebar ---
 age = st.sidebar.slider("Usia (Tahun)", min_value=18, max_value=80, value=35, step=1)
-credit_amount = st.sidebar.number_input("Jumlah Kredit", min_value=250, max_value=20000, value=3000, step=100)
+credit_amount = st.sidebar.number_input("Jumlah Kredit ($)", min_value=250, max_value=20000, value=3000, step=100)
 duration = st.sidebar.slider("Durasi Pinjaman (Bulan)", min_value=4, max_value=72, value=24, step=1)
 
 housing_label = st.sidebar.selectbox("Status Kepemilikan Rumah", list(housing_map.keys()))
