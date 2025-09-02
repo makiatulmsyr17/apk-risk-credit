@@ -88,11 +88,11 @@ if predict_button:
     if prediction[0] == 1: # Asumsi 1 = Good, 0 = Bad
         st.success("## Risiko Rendah (Good)")
         st.progress(float(probability[0][1]))
-        st.write(f"**Tingkat Kepercayaan:** {probability[0][1]*100:.2f}%")
+        st.write(f"**Resiko Gagal Bayar:** {probability[0][1]*100:.2f}%")
     else:
         st.error("## Risiko Tinggi (Bad)")
         st.progress(float(probability[0][0]))
-        st.write(f"**Tingkat Kepercayaan:** {probability[0][0]*100:.2f}%")
+        st.write(f"**Resiko Gagal Bayar :** {probability[0][0]*100:.2f}%")
 
     # Menampilkan data input untuk verifikasi
     st.write("---")
